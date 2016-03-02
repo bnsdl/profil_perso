@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="lib.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+</head>
+<body onload="init()">
+  <h1>Curriculum vitae - Benoit Delboé</h1>
+  <div id="topContainer" class="flexContainer">
+    <div id="leftDescriptions">
+      <div id="profil" class="blockText">
+        <h3 class="topContainerTitles">Profil:</h3>
+        <ul id="forProfil"></ul>
+      </div>
+      <div id="projects" class="blockText">
+        <h3 class="topContainerTitles">Mes projets:</h3>
+        <ul id="forProjects"></ul>
+      </div>
+    </div>
+    <img src="fleche.png" id="scroller"></img>
+    <!-- <div style="width:400px">
+    <canvas id="canvas" width="400" height="600"></canvas>
+  </div> -->
+  <div id="rightDescriptions">
+    <div id="study" class="blockText">
+      <h3 class="topContainerTitles">Etudes:</h3>
+      <ul id="forStudy">
+        <!-- <li><em>2015:</em> TOEIC - 820/990</li>
+        <li><em>2013-2014:</em> Université de Lorraine - DULASP (Diplome Universitaire de Langue Anglaise en Situation Professionnelle)</li>
+        <li><em>2012-2014:</em> ISAM-IAE Université de Lorraine - Licence science de Gestion</li>
+        <li><em>2011-2012:</em> IUT Nancy Charlemagne - DUT Gestion des Entreprises et Administrations</li>
+        <li><em>2009-2011:</em> Faculté de Droit, Université de Lorraine - DEUG Droit</li> -->
+        </ul>
+      </div>
+      <div id="experiences" class="blockText">
+        <h3 class="topContainerTitles">Expériences professionnelles:</h3>
+        <ul id="forExp">
+          <!-- <li><em>2014-2015:</em> Serveur puis responsable de salle - Restaurant 'Le Grand Blond avec un Tablier Noir', Nancy</li> -->
+        </ul>
+          </div>
+        </div>
+      </div>
+      <div id="legend">
+        <h2>Compétences professionnelles:</h2>
+        <div class="skillsLegends">
+          <p class="legendTitle">Apprentissage</p>
+          <img style="width:30px; height:30px" src="etoile_vide.png" alt="#">
+        </div>
+        <div class="skillsLegends">
+          <p class="legendTitle">Notions</p>
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+        </div>
+        <div class="skillsLegends">
+          <p class="legendTitle">Autonome</p>
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+        </div>
+        <div class="skillsLegends">
+          <p class="legendTitle">Maîtrise</p>
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+        </div>
+        <div class="skillsLegends">
+          <p class="legendTitle">Expert</p>
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+          <img style="width:30px; height:30px" src="etoile.png" alt="#">
+        </div>
+      </div>
+      <div class="flexContainer" id="skills">
+        <div id="langFram">
+          <div id="languages" class="blockText">
+            <h3>Langages informatiques:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div id="frameworks" class="blockText">
+            <h3>Librairies/CMS/Frameworks:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div id="soft">
+          <div id="editors" class="blockText">
+            <h3>IDE/Éditeurs:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div id="os" class="blockText">
+            <h3>Systèmes d'exploitations:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div id="office" class="blockText">
+            <h3>Suites bureautiques:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div id="more">
+          <div id="administration" class="blockText">
+            <h3>Gestion/Administration:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div id="others" class="blockText">
+            <h3>Autres:</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+
+    </body>
+    <script type="text/javascript">
+
+    // console.log('données', datas);
+    // var app = new App();
+
+    $("#scroller").click(function() {
+      $('html,body').animate({
+        scrollTop: $("#legend").offset().top},
+        2000);
+      });
+
+      // console.log(document.getElementById("myImage"));
+      // console.log(document.getElementById("canvas"));
+      // var feuille;
+      // var context;
+
+
+      // window.onload = function initCanvas(){
+      //   console.log("init canvas...");
+      //   var feuille = byId("canvas");
+      //   context = feuille.getContext("2d");
+      // var image = new Image();
+      // image.src = 'benoit.png';
+      // image.onload = function() {
+      //   context.drawImage(this, 40, 25);
+      //   trait_info(165,50,"g");
+      //   context.font = "24px Helvetica";
+      //   context.fillStyle = "#6b6a6a";
+      //   context.fillText("Profil", 44,25);
+      //   trait_info(140, 300, "g");
+      //   context.fillText("Études", 279,110);
+      //   trait_info(235, 135,"d");
+      //   context.fillText("Projets", 19,273);
+      //   trait_info(250, 500, "d", "exp");
+      //   context.fillText("Expériences ", 268,475);
+      // };
+      // };
+
+
+      function trait_info(ax, ay, dir, exp){
+        // context.strokeStyle = "black";
+        context.beginPath();
+        context.moveTo(ax, ay);
+        if (dir === "g"){
+          var bx = ax-20;
+          var by = ay-20;
+          var cx = bx-100;
+        }
+        else if (dir === "d"){
+          var bx = ax+20;
+          var by = ay-20;
+          var cx = bx+100;
+        }
+        if (exp === "exp"){
+          var cx = bx + 130;
+        }
+        context.lineTo(bx, by);
+        context.closePath();
+        context.stroke();
+        context.beginPath();
+        context.moveTo(bx, by);
+        context.lineTo(cx, by);
+        context.closePath();
+        context.stroke();
+      }
+
+    // var test = new AjaxRequest('get','data.php');
+
+
+
+
+      </script>
+      </html>
